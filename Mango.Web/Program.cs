@@ -1,15 +1,23 @@
-var builder = WebApplication.CreateBuilder(args);
+using Mango.Web.Service;
+using Mango.Web.Service.IService;
+using Mango.Web.Utility;
 
-// Add services to the container.
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
+
 builder.Services.AddControllersWithViews();
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddHttpClient();
+builder.Services.AddHttpClient<ICouponService, CouponService>();
+SD.CouponApiBase = builder.Configuration["ServiceUrls:CouponApi"];
 
-var app = builder.Build();
+builder.Services.AddScoped<IBaseService, BaseService>();
+builder.Services.AddScoped<ICouponService, CouponService>();
 
-// Configure the HTTP request pipeline.
+WebApplication app = builder.Build();
+
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 

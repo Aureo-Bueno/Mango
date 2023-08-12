@@ -16,6 +16,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.Web", "Mango.Web\Mango.Web.csproj", "{2ABD21F2-1598-4D5B-9BDC-3F783018CA2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,12 +28,17 @@ Global
 		{2D4AC24B-4E66-4C13-A090-AD8BE861ECC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D4AC24B-4E66-4C13-A090-AD8BE861ECC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D4AC24B-4E66-4C13-A090-AD8BE861ECC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ABD21F2-1598-4D5B-9BDC-3F783018CA2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ABD21F2-1598-4D5B-9BDC-3F783018CA2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ABD21F2-1598-4D5B-9BDC-3F783018CA2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ABD21F2-1598-4D5B-9BDC-3F783018CA2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2D4AC24B-4E66-4C13-A090-AD8BE861ECC3} = {6E2F5C7A-C0F1-428E-9103-9F4F734F4118}
+		{2ABD21F2-1598-4D5B-9BDC-3F783018CA2C} = {0A57B13F-DC30-4655-A101-8A492DF6ABF5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {68BE0B93-3DAE-40EA-A2D1-9D46ED69DA40}

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Mango.Services.CouponAPI.props" />
+</Project>
